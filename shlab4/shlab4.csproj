@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C15BBD7-C84A-4623-9807-B6127B544B4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shlab4</RootNamespace>
+    <AssemblyName>shlab4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClient.Designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReservation.Designer.cs">
+      <DependentUpon>AddReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScreen.Designer.cs">
+      <DependentUpon>AddScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSeats.Designer.cs">
+      <DependentUpon>AddSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTicket.Designer.cs">
+      <DependentUpon>AddTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteClient.Designer.cs">
+      <DependentUpon>DeleteClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMovie.Designer.cs">
+      <DependentUpon>DeleteMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteReservation.Designer.cs">
+      <DependentUpon>DeleteReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteScreen.Designer.cs">
+      <DependentUpon>DeleteScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteTicket.Designer.cs">
+      <DependentUpon>DeleteTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movies.Designer.cs">
+      <DependentUpon>Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoviesInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoviesInformation.Designer.cs">
+      <DependentUpon>MoviesInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieTypes.Designer.cs">
+      <DependentUpon>MovieTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowBirthdays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowBirthdays.Designer.cs">
+      <DependentUpon>ShowBirthdays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketsForReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketsForReservation.Designer.cs">
+      <DependentUpon>TicketsForReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateClient.Designer.cs">
+      <DependentUpon>UpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateScreenGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateScreenGrid.Designer.cs">
+      <DependentUpon>updateScreenGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMovie.Designer.cs">
+      <DependentUpon>UpdateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations.Designer.cs">
+      <DependentUpon>Reservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens.Designer.cs">
+      <DependentUpon>Screens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton.cs" />
+    <Compile Include="tablesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tablesView.Designer.cs">
+      <DependentUpon>tablesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets.Designer.cs">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateScreen.Designer.cs">
+      <DependentUpon>UpdateScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTicket.Designer.cs">
+      <DependentUpon>UpdateTicket.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReservation.resx">
+      <DependentUpon>AddReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScreen.resx">
+      <DependentUpon>AddScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSeats.resx">
+      <DependentUpon>AddSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTicket.resx">
+      <DependentUpon>AddTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteClient.resx">
+      <DependentUpon>DeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMovie.resx">
+      <DependentUpon>DeleteMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteReservation.resx">
+      <DependentUpon>DeleteReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteScreen.resx">
+      <DependentUpon>DeleteScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteTicket.resx">
+      <DependentUpon>DeleteTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movies.resx">
+      <DependentUpon>Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoviesInformation.resx">
+      <DependentUpon>MoviesInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieTypes.resx">
+      <DependentUpon>MovieTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservations.resx">
+      <DependentUpon>Reservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens.resx">
+      <DependentUpon>Screens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowBirthdays.resx">
+      <DependentUpon>ShowBirthdays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets.resx">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketsForReservation.resx">
+      <DependentUpon>TicketsForReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateClient.resx">
+      <DependentUpon>UpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMovie.resx">
+      <DependentUpon>UpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tablesView.resx">
+      <DependentUpon>tablesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateScreen.resx">
+      <DependentUpon>UpdateScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateScreenGrid.resx">
+      <DependentUpon>updateScreenGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTicket.resx">
+      <DependentUpon>UpdateTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-city.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gemte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nWr0soY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ray.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
